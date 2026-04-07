@@ -31,22 +31,6 @@ Independent smart contract and web security researcher. Active across **Cantina*
 
 ---
 
-## Ready to Submit
-
-Findings that have cleared all internal quality gates (§16 gate pass) and are pending platform submission.
-
-| Protocol | Platform | Severity | Summary |
-|----------|----------|----------|---------|
-| Kinetiq | Cantina | High | `closeRebalanceRequests` triggers L1 redelegation before undelegation confirms — double-delegation ordering race on Hyperliquid |
-| Kinetiq | Cantina | High | `executeEmergencyWithdrawal` omits accounting update — exchange ratio permanently inflated |
-| Kinetiq | Cantina | High | `cancelWithdrawal` over-counts `_cancelledWithdrawalAmount` by `bufferUsed` — L1 over-delegation on redelegate |
-| Ventuals | Cantina | Medium | Permissionless `finalizeBatch` — any address can grief withdrawal queue with empty batches, resetting 24h timer indefinitely |
-| Ventuals | Cantina | Medium | `applySlash(batchIndex, 0)` permanently bricks protocol via `totalHypeProcessed` underflow — no on-chain recovery |
-| Citrix NetScaler | HackerOne | High | Session slot assigned before identity binding completes — cross-user session swap (CVE-2026-4368) |
-| Rujira Ghost Credit | Code4rena | High | `BankMsg` commits collateral before `SubMsg` vault repay — collateral orphaned when preference step fails |
-
----
-
 ## Private Submissions (Anonymized — NDA / Pending Disclosure)
 
 | Platform | Severity | Type |
