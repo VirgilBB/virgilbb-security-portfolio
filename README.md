@@ -69,20 +69,6 @@ Independent smart contract and web security researcher. Active across **Cantina*
 
 ---
 
-## Private Submissions (Anonymized — NDA / Pending Disclosure)
-
-| Platform | Severity | Type |
-|----------|----------|------|
-| HackerOne | Critical | OAuth CSRF — missing `state` parameter allows session linking via Google/GitHub social login on Web3 auth platform |
-| HackerOne | Critical | Unauthenticated endpoint exposes OAuth client secrets and third-party API keys in production |
-| HackerOne | Medium | Reflected XSS via unencoded redirect parameter in enterprise VPN gateway logout flow |
-| Immunefi | High | Collateral liquidation logic error in DeFi lending protocol — borrower collateral silently orphaned on failed repay |
-| Cantina | High | Cancelled withdrawal accounting gap — attacker over-delegates validator funds on L1 (Hyperliquid LST) |
-| Cantina | Critical | Merkle-based multichain airdrop replay via cross-chain TTL gap |
-| Cantina | High | DEX reentrancy via untrusted delegatecall in referral commission distribution path |
-
----
-
 ## Methodology
 
 **Smart Contracts (Solidity)**
