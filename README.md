@@ -32,6 +32,7 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | USDai | Medium | `DepositTimelock.refundWithdrawAmount` misdirected to wrong recipient |
 | Concrete | High | `cancelRequest` uses `msg.sender` instead of request owner, permanently locking shares |
 | Reserve Protocol | High | `ImmutableTokenJar` permissionless drain of non-target tokens in permissionless mode |
+| Redstone (×2) | Critical/High | `getUniqueSignersThreshold()==0` disables all signature verification; `pickMedian()` integer overflow enables permanent oracle DoS |
 | OKX DEX (×2) | Critical | `DagRouter._MODE_BY_INVEST` drains router balance; `PMMAdaptor` unauthenticated calldata-tail payer drains adapter ERC-20 |
 | Pendle | High | `PYLpOracle` zero-duration TWAP manipulation |
 | PancakeSwap (×2) | High | `CL_INCREASE_FROM_DELTAS` fee theft; `CL_MINT_FROM_DELTAS` principal theft |
