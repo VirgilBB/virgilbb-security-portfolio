@@ -9,7 +9,7 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | Metric | Count |
 |--------|-------|
 | Total Submissions | 65+ |
-| Findings Under Review | 13 |
+| Findings Under Review | 11 |
 | Platforms | Cantina · Code4rena · Immunefi · HackerOne |
 | Primary Languages | Solidity · Rust (CosmWasm) · Python |
 | Focus Areas | DeFi (LST, lending, DEX) · Cross-chain · Web2 auth on Web3 infra |
@@ -31,6 +31,9 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | Boros | Medium | `agentExpiry` timestamp bug |
 | USDai | Medium | `DepositTimelock.refundWithdrawAmount` misdirected to wrong recipient |
 | Concrete | High | `cancelRequest` uses `msg.sender` instead of request owner, permanently locking shares |
+| OKX DEX (×2) | Critical | `DagRouter._MODE_BY_INVEST` drains router balance; `PMMAdaptor` unauthenticated calldata-tail payer drains adapter ERC-20 |
+| OKX DEX (×2) | Medium | ETH commission referrer reentrancy in `DexRouter`; input tokens locked when fork weights sum below 10,000 |
+| PancakeSwap (×2) | High | `CL_INCREASE_FROM_DELTAS` fee theft; `CL_MINT_FROM_DELTAS` principal theft |
 
 ---
 
@@ -43,8 +46,6 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | NetScaler | HackerOne | High | Cross-user session swap via race condition in Gateway/AAA session binding |
 | NetScaler | HackerOne | Medium | RelayState reflected without HTML-encoding in `/cgi/logout` enables session cookie theft via XSS |
 | Sablier | Cantina | Critical | Merkle multichain replay: cross-chain replay after TTL expiry reactivates expired proofs |
-| OKX DEX | Cantina | High | ETH commission referrer reentrancy via untrusted delegatecall in fee distribution path |
-| OKX DEX | Cantina | High | Partial fork weight causes input token permanent lock when rebalance is incomplete |
 | InfiFi | Cantina | High | Gateway proxy DoS: operator cannot restore service after emergency pause sequence |
 | Injective Peggy | C4 | High | `submitBatch` fee reverts brick the bridge when fee token transfer fails |
 | Injective Peggy | C4 | High | `updateValset` reward revert permanently locks validator set updates |
