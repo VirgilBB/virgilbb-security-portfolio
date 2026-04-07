@@ -45,9 +45,7 @@ Independent smart contract and web security researcher. Active across **Cantina*
 
 ---
 
-## Duplicate / Contested (Learning Log)
-
-**19 independent duplicate discoveries across 10 protocols.** Every finding here was valid and confirmed — co-discovered with other researchers. This is direct evidence of finding real bugs, not noise.
+## Duplicate / Contested
 
 | Protocol | Severity | Finding | Notes |
 |----------|----------|---------|-------|
