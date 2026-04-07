@@ -9,7 +9,7 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | Metric | Count |
 |--------|-------|
 | Total Submissions | 65+ |
-| Findings Under Review | 13 |
+| Findings Under Review | 11 |
 | Platforms | Cantina · Code4rena · Immunefi · HackerOne |
 | Primary Languages | Solidity · Rust (CosmWasm) · Python |
 | Focus Areas | DeFi (LST, lending, DEX) · Cross-chain · Web2 auth on Web3 infra |
@@ -50,7 +50,7 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | Sablier | Cantina | Critical | Merkle multichain replay: cross-chain replay after TTL expiry reactivates expired proofs |
 | OKX DEX | Cantina | Medium | ETH commission referrer reentrancy via untrusted delegatecall in fee distribution path |
 | OKX DEX | Cantina | Medium | Partial fork weight causes input token permanent lock when rebalance is incomplete |
-| InfiFi | Cantina | High | Gateway proxy DoS: operator cannot restore service after emergency pause sequence |
+
 | Injective Peggy | C4 | High | `submitBatch` fee reverts brick the bridge when fee token transfer fails |
 | Injective Peggy | C4 | High | `updateValset` reward revert permanently locks validator set updates |
 | LayerZero Stellar | C4 | High | DVN `UsedHash` TTL persistent storage replay after 30-day expiry |
