@@ -8,8 +8,8 @@ Independent smart contract and web security researcher. Active across **Cantina*
 
 | Metric | Count |
 |--------|-------|
-| Total Submissions | 57+ |
-| Findings Under Review | 7 |
+| Total Submissions | 65+ |
+| Findings Under Review | 13 |
 | Platforms | Cantina · Code4rena · Immunefi · HackerOne |
 | Primary Languages | Solidity · Rust (CosmWasm) · Python |
 | Focus Areas | DeFi (LST, lending, DEX) · Cross-chain · Web2 auth on Web3 infra |
@@ -30,6 +30,7 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | Midas | Medium | `redeemInstant` allowance overcounting blocks legitimate user redemptions |
 | Boros | Medium | `agentExpiry` timestamp bug |
 | USDai | Medium | `DepositTimelock.refundWithdrawAmount` misdirected to wrong recipient |
+| Concrete | High | `cancelRequest` uses `msg.sender` instead of request owner, permanently locking shares |
 
 ---
 
@@ -37,10 +38,19 @@ Independent smart contract and web security researcher. Active across **Cantina*
 
 | Protocol | Platform | Severity | Summary |
 |----------|----------|----------|---------|
-| Sablier | Cantina | Critical | Merkle multichain replay — cross-chain replay after TTL expiry reactivates expired proofs |
+| Dynamic.xyz | HackerOne | Critical | OAuth CSRF via missing state parameter enables Google/GitHub account linking without user consent |
+| Dynamic.xyz | HackerOne | Critical | Unauthenticated endpoint exposes OAuth client IDs, masked secrets, and third-party API keys |
+| NetScaler | HackerOne | High | Cross-user session swap via race condition in Gateway/AAA session binding |
+| NetScaler | HackerOne | Medium | RelayState reflected without HTML-encoding in `/cgi/logout` enables session cookie theft via XSS |
+| Sablier | Cantina | Critical | Merkle multichain replay: cross-chain replay after TTL expiry reactivates expired proofs |
 | OKX DEX | Cantina | High | ETH commission referrer reentrancy via untrusted delegatecall in fee distribution path |
 | OKX DEX | Cantina | High | Partial fork weight causes input token permanent lock when rebalance is incomplete |
-| InfiFi | Cantina | Medium | Gateway pause DoS — operator cannot restore service after emergency pause sequence |
+| InfiFi | Cantina | High | Gateway proxy DoS: operator cannot restore service after emergency pause sequence |
+| Injective Peggy | C4 | High | `submitBatch` fee reverts brick the bridge when fee token transfer fails |
+| Injective Peggy | C4 | High | `updateValset` reward revert permanently locks validator set updates |
+| LayerZero Stellar | C4 | High | DVN `UsedHash` TTL persistent storage replay after 30-day expiry |
+| LayerZero Stellar | C4 | High | Endpoint `freeze_ttl_configs(None)` silently disables TTL with no recovery path |
+| Renegade | C4 | High | `u128` underflow in `match_orders` corrupts order book state |
 
 ---
 
@@ -83,4 +93,4 @@ Independent smart contract and web security researcher. Active across **Cantina*
 
 ---
 
-*Last updated: 2026-04-05*
+*Last updated: 2026-04-07*
