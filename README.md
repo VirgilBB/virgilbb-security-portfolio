@@ -9,6 +9,7 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | Metric | Count |
 |--------|-------|
 | Total Submissions | 65+ |
+| Duplicate Findings | 29 |
 | Findings Under Review | 11 |
 | Platforms | Cantina · Code4rena · Immunefi · HackerOne |
 | Primary Languages | Solidity · Rust (CosmWasm) · Python |
