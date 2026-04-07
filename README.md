@@ -10,6 +10,7 @@ Independent smart contract and web security researcher. Active across **Cantina*
 |--------|-------|
 | Total Submissions | 65+ |
 | Duplicate Findings | 29 |
+| Accepted (Pending Disclosure) | 2 |
 | Findings Under Review | 11 |
 | Platforms | Cantina · Code4rena · Immunefi · HackerOne |
 | Primary Languages | Solidity · Rust (CosmWasm) · Python |
@@ -37,6 +38,14 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | OKX DEX (×2) | Critical | `DagRouter._MODE_BY_INVEST` drains router balance; `PMMAdaptor` unauthenticated calldata-tail payer drains adapter ERC-20 |
 | Pendle | High | `PYLpOracle` zero-duration TWAP manipulation |
 | PancakeSwap (×2) | High | `CL_INCREASE_FROM_DELTAS` fee theft; `CL_MINT_FROM_DELTAS` principal theft |
+
+---
+
+## Accepted — Pending Disclosure
+
+| Protocol | Platform | Severity | Status |
+|----------|----------|----------|--------|
+| (embargoed) | Cantina | TBD | 2 findings accepted. Cantina releases details once contest closes and patches are applied. |
 
 ---
 
