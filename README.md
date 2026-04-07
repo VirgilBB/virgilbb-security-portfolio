@@ -1,6 +1,6 @@
 # Security Research Portfolio — Virgil Bellini
 
-Independent smart contract and web security researcher. Active across **Cantina**, **Code4rena**, **Immunefi**, and **HackerOne** since 2024.
+Independent smart contract and web security researcher. Active across **Cantina**, **Code4rena**, **Immunefi**, and **HackerOne**.
 
 ---
 
