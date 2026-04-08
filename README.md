@@ -8,7 +8,7 @@ Independent security researcher specializing in systemic infrastructure security
 
 | Metric | Value |
 |--------|-------|
-| Total Findings | 65+ |
+| Total Findings Submitted | 70+ |
 | Duplicate Findings | 29 |
 | Accepted (Pending Disclosure) | 2 |
 | Under Review | 11 |
@@ -22,7 +22,7 @@ Independent security researcher specializing in systemic infrastructure security
 
 | Protocol | Platform | Severity | Status |
 |----------|----------|----------|--------|
-| (embargoed) | Cantina | High (×2) | 2 findings accepted. Cantina releases details once contest closes and patches are applied. |
+| Pending Disclosure | Cantina | High (×2) | 2 findings accepted. Cantina releases details once contest closes and patches are applied. |
 
 ---
 
@@ -98,6 +98,15 @@ Reproducible infrastructure templates deployed on Akash decentralized cloud.
 |----------|-------------|-------|
 | Metal Validator | Metal blockchain validator deployment template | [GitHub](https://github.com/VirgilBB/Metal-Validator) |
 | DCRPulse | Decred VSP deployment template | [GitHub](https://github.com/VirgilBB/dcrpulse) |
+
+---
+
+## Methodology
+
+- 29-class vulnerability taxonomy covering DeFi, bridges, ZK circuits, governance, and Web2 infrastructure
+- Mandatory program intake gate — scope, prior audits, and eligibility verified before analysis begins
+- Every finding validated with Foundry fork tests against live chain state
+- Protocol-type routing to prioritize highest-impact bug classes per target
 
 ---
 
