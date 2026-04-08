@@ -11,7 +11,7 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | Total Submissions | 65+ |
 | Duplicate Findings | 29 |
 | Accepted (Pending Disclosure) | 2 |
-| Findings Under Review | 9 |
+| Findings Under Review | 11 |
 | Platforms | Cantina · Code4rena · Immunefi · HackerOne |
 | Primary Languages | Solidity · Rust (CosmWasm) · Python |
 | Focus Areas | DeFi (LST, lending, DEX) · Cross-chain · Web2 auth on Web3 infra |
@@ -62,6 +62,8 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | LayerZero Stellar | C4 | High | DVN `UsedHash` TTL persistent storage replay after 30-day expiry |
 | LayerZero Stellar | C4 | High | Endpoint `freeze_ttl_configs(None)` silently disables TTL with no recovery path |
 | Renegade | C4 | High | `u128` underflow in `match_orders` corrupts order book state |
+| Chainlink PA V2 | C4 | High | `performUpkeep` accepts caller-supplied amount with no cap, allowing `AUCTION_WORKER_ROLE` to drain entire FeeAggregator balance |
+| Chainlink PA V2 | C4 | High | `auctionCallback` executes unrestricted `Call[]` array, enabling approval injection to drain `assetIn` from AuctionBidder |
 
 ---
 
