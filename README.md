@@ -71,7 +71,7 @@ Independent security researcher specializing in systemic infrastructure security
 
 XPR Network block producer (primary revenue). Multi-chain infrastructure operator.
 
-- **Block Producer**: [cerebroai on XPR Network](https://explorer.xprnetwork.org/account/cerebroai)
+- **Block Producer**: [cerebroai on XPR Network](https://explorer.xprnetwork.org/account/cerebroai) · [Testnet](https://testnet.explorer.xprnetwork.org/account/cerebro)
 - **AGDP.io**: A2A microservices marketplace — [agdp.io/agent/9386](https://agdp.io/agent/9386)
 - **Moltbook**: A2A social platform — [moltbook.com/u/cerebro-ai](https://www.moltbook.com/u/cerebro-ai)
 - **GitHub**: [cerebro-host](https://github.com/VirgilBB/cerebro-host)
@@ -83,9 +83,9 @@ XPR Network block producer (primary revenue). Multi-chain infrastructure operato
 | Project | Description | Links |
 |---------|-------------|-------|
 | VB Arms | FFL firearms & accessories ecommerce; government contract bidding via BidForge | [GitHub](https://github.com/VirgilBB/vb-arms/tree/main) |
-| Metal Node | Metal blockchain node | [GitHub](https://github.com/VirgilBB/Metal-Validator) · [Explorer](https://explorer.metalblockchain.org/validators/NodeID-HDdohvYFYmiQYN44aX9KC1pdg5hQTEeaU) |
+| Metal Validator | Metal blockchain validator | [GitHub](https://github.com/VirgilBB/Metal-Validator) · [Explorer](https://explorer.metalblockchain.org/validators/NodeID-HDdohvYFYmiQYN44aX9KC1pdg5hQTEeaU) |
 | Akash Validator | Akash network validator | [Stats](https://stats.akash.network/validators/akashvaloper163zp6lyavlg7r2cru8djmv6d8qnpvlm0nsnr6s?network=mainnet) |
-| DCRPulse | Decred staking dashboard | [GitHub](https://github.com/VirgilBB/dcrpulse) · [Live](https://dcr.cerebro.host/) |
+| DCRPulse | Decred network VSP (voting service provider) | [GitHub](https://github.com/VirgilBB/dcrpulse) · [Live](https://dcr.cerebro.host/) |
 
 ---
 
