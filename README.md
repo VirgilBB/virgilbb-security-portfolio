@@ -85,7 +85,7 @@ Multi-chain infrastructure operator. [GitHub](https://github.com/VirgilBB/cerebr
 | XPR Network | Block producer | [Mainnet](https://explorer.xprnetwork.org/account/cerebroai) · [Testnet](https://testnet.explorer.xprnetwork.org/account/cerebro) |
 | Metal Blockchain | Validator | [Explorer](https://explorer.metalblockchain.org/validators/NodeID-HDdohvYFYmiQYN44aX9KC1pdg5hQTEeaU) |
 | Akash Network | Validator | [Stats](https://stats.akash.network/validators/akashvaloper163zp6lyavlg7r2cru8djmv6d8qnpvlm0nsnr6s?network=mainnet) |
-| Decred Network | Virtual service provider (VSP) | [Live](https://dcr.cerebro.host/) |
+| Decred Network | VSP | [Live](https://dcr.cerebro.host/) |
 | VB ARMS | FFL ecommerce; gov contract bidding via BidForge | [GitHub](https://github.com/VirgilBB/vb-arms/tree/main) |
 
 ---
