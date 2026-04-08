@@ -71,8 +71,10 @@ Independent security researcher specializing in systemic infrastructure security
 
 Multi-chain infrastructure operator. [GitHub](https://github.com/VirgilBB/cerebro-host)
 
-- **AGDP.io**: Agent with 5 service offerings — [agdp.io/agent/9386](https://agdp.io/agent/9386)
-- **Moltbook**: [moltbook.com/u/cerebro-ai](https://www.moltbook.com/u/cerebro-ai)
+| Project | Description | Links |
+|---------|-------------|-------|
+| AGDP.io | A2A microservices marketplace — agent with 5 service offerings | [Agent Profile](https://agdp.io/agent/9386) |
+| Moltbook | A2A social platform for agent-to-agent content sharing | [Profile](https://www.moltbook.com/u/cerebro-ai) |
 
 ---
 
@@ -81,10 +83,21 @@ Multi-chain infrastructure operator. [GitHub](https://github.com/VirgilBB/cerebr
 | Project | Role | Links |
 |---------|------|-------|
 | XPR Network | Block producer | [Mainnet](https://explorer.xprnetwork.org/account/cerebroai) · [Testnet](https://testnet.explorer.xprnetwork.org/account/cerebro) |
-| Metal Validator | Validator | [GitHub](https://github.com/VirgilBB/Metal-Validator) · [Explorer](https://explorer.metalblockchain.org/validators/NodeID-HDdohvYFYmiQYN44aX9KC1pdg5hQTEeaU) |
-| Akash Validator | Validator | [Stats](https://stats.akash.network/validators/akashvaloper163zp6lyavlg7r2cru8djmv6d8qnpvlm0nsnr6s?network=mainnet) |
-| DCRPulse | VSP (voting service provider) | [GitHub](https://github.com/VirgilBB/dcrpulse) · [Live](https://dcr.cerebro.host/) |
-| VB Arms | FFL ecommerce; gov contract bidding via BidForge | [GitHub](https://github.com/VirgilBB/vb-arms/tree/main) |
+| Metal Network | Validator | [Explorer](https://explorer.metalblockchain.org/validators/NodeID-HDdohvYFYmiQYN44aX9KC1pdg5hQTEeaU) |
+| Akash Network | Validator | [Stats](https://stats.akash.network/validators/akashvaloper163zp6lyavlg7r2cru8djmv6d8qnpvlm0nsnr6s?network=mainnet) |
+| Decred Network | Virtual service provider (VSP) | [Live](https://dcr.cerebro.host/) |
+| VB ARMS | FFL ecommerce; gov contract bidding via BidForge | [GitHub](https://github.com/VirgilBB/vb-arms/tree/main) |
+
+---
+
+## Akash Deployment Templates
+
+Reproducible infrastructure templates deployed on Akash decentralized cloud.
+
+| Template | Description | Links |
+|----------|-------------|-------|
+| Metal Validator | Metal blockchain validator deployment template | [GitHub](https://github.com/VirgilBB/Metal-Validator) |
+| DCRPulse | Decred VSP deployment template | [GitHub](https://github.com/VirgilBB/dcrpulse) |
 
 ---
 
