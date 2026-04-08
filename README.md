@@ -101,16 +101,6 @@ Reproducible infrastructure templates deployed on Akash decentralized cloud.
 
 ---
 
-## Methodology
-
-| Domain | Focus |
-|--------|-------|
-| Smart Contracts (Solidity) | State machines, accounting invariants, access control, cross-function ordering, delegatecall surfaces, reentrancy via non-obvious callback paths |
-| Rust / CosmWasm | Message ordering (BankMsg vs SubMsg), u128 overflow/underflow in fixed-point arithmetic, cross-contract reply handler silent failures |
-| Web2 on Web3 Infrastructure | OAuth flow analysis, session token binding races, API endpoint enumeration, CVE-mapped findings against production infrastructure |
-
----
-
 ## Contact
 
 - **GitHub**: [VirgilBB](https://github.com/VirgilBB)
