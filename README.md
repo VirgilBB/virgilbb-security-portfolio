@@ -11,7 +11,7 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | Total Submissions | 65+ |
 | Duplicate Findings | 29 |
 | Accepted (Pending Disclosure) | 2 |
-| Findings Under Review | 11 |
+| Findings Under Review | 9 |
 | Platforms | Cantina · Code4rena · Immunefi · HackerOne |
 | Primary Languages | Solidity · Rust (CosmWasm) · Python |
 | Focus Areas | DeFi (LST, lending, DEX) · Cross-chain · Web2 auth on Web3 infra |
@@ -55,14 +55,10 @@ Independent smart contract and web security researcher. Active across **Cantina*
 |----------|----------|----------|---------|
 | Dynamic.xyz | HackerOne | Critical | OAuth CSRF via missing state parameter enables Google/GitHub account linking without user consent |
 | Dynamic.xyz | HackerOne | Critical | Unauthenticated endpoint exposes OAuth client IDs, masked secrets, and third-party API keys |
-| NetScaler | HackerOne | High | Cross-user session swap via race condition in Gateway/AAA session binding |
 | NetScaler | HackerOne | Medium | RelayState reflected without HTML-encoding in `/cgi/logout` enables session cookie theft via XSS |
 | Sablier | Cantina | Critical | Merkle multichain replay: cross-chain replay after TTL expiry reactivates expired proofs |
 | OKX DEX | Cantina | Medium | ETH commission referrer reentrancy via untrusted delegatecall in fee distribution path |
 | OKX DEX | Cantina | Medium | Partial fork weight causes input token permanent lock when rebalance is incomplete |
-
-| Injective Peggy | C4 | High | `submitBatch` fee reverts brick the bridge when fee token transfer fails |
-| Injective Peggy | C4 | High | `updateValset` reward revert permanently locks validator set updates |
 | LayerZero Stellar | C4 | High | DVN `UsedHash` TTL persistent storage replay after 30-day expiry |
 | LayerZero Stellar | C4 | High | Endpoint `freeze_ttl_configs(None)` silently disables TTL with no recovery path |
 | Renegade | C4 | High | `u128` underflow in `match_orders` corrupts order book state |
@@ -94,4 +90,4 @@ Independent smart contract and web security researcher. Active across **Cantina*
 
 ---
 
-*Last updated: 2026-04-07*
+*Last updated: 2026-04-08*
