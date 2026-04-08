@@ -1,24 +1,34 @@
 # Security Research Portfolio — Virgil Bellini
 
-Independent smart contract and web security researcher. Active across **Cantina**, **Code4rena**, **Immunefi**, and **HackerOne**.
+Independent security researcher specializing in systemic infrastructure security, logic errors, and economic exploits. Active across **Cantina**, **Code4rena**, **Immunefi**, and **HackerOne**.
 
 ---
 
 ## Stats
 
-| Metric | Count |
+| Metric | Value |
 |--------|-------|
-| Total Submissions | 65+ |
+| Total Findings | 65+ |
 | Duplicate Findings | 29 |
 | Accepted (Pending Disclosure) | 2 |
-| Findings Under Review | 11 |
+| Under Review | 11 |
 | Platforms | Cantina · Code4rena · Immunefi · HackerOne |
+| Specialties | Systemic Infrastructure Security · Logic Errors · Economic Exploits |
 | Primary Languages | Solidity · Rust (CosmWasm) · Python |
-| Focus Areas | DeFi (LST, lending, DEX) · Cross-chain · Web2 auth on Web3 infra |
 
 ---
 
-## Duplicates
+## Accepted — Pending Disclosure
+
+| Protocol | Platform | Severity | Status |
+|----------|----------|----------|--------|
+| (embargoed) | Cantina | High (×2) | 2 findings accepted. Cantina releases details once contest closes and patches are applied. |
+
+---
+
+## Selected Public Findings
+
+### Duplicates
 
 | Protocol | Severity | Finding |
 |----------|----------|---------|
@@ -28,8 +38,8 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | Doppler | Medium | `tickAccumulator` corruption in slot0 rebalance (N-epoch amplified) |
 | Kiln | High | Withdrawer revert deadlock |
 | Revert Finance | Medium | `V3Oracle` `twapSeconds=0` allows instant TWAP manipulation |
-| Berachain | High | Honey oracle staleness in basket mode — stale price accepted silently |
-| Midas (×2) | Medium | `redeemInstant` allowance overcounting; `RedemptionVaultWithBUIDL`/`RedemptionVaultWithUSTB` replicate same overcounting bug |
+| Berachain | High | Honey oracle staleness in basket mode |
+| Midas (×2) | Medium | `redeemInstant` allowance overcounting; `RedemptionVaultWithBUIDL`/`USTB` replicate same overcounting bug |
 | Boros | Medium | `agentExpiry` timestamp bug |
 | USDai | Medium | `DepositTimelock.refundWithdrawAmount` misdirected to wrong recipient |
 | Concrete | High | `cancelRequest` uses `msg.sender` instead of request owner, permanently locking shares |
@@ -39,17 +49,7 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | Pendle | High | `PYLpOracle` zero-duration TWAP manipulation |
 | PancakeSwap (×2) | High | `CL_INCREASE_FROM_DELTAS` fee theft; `CL_MINT_FROM_DELTAS` principal theft |
 
----
-
-## Accepted — Pending Disclosure
-
-| Protocol | Platform | Severity | Status |
-|----------|----------|----------|--------|
-| (embargoed) | Cantina | TBD | 2 findings accepted. Cantina releases details once contest closes and patches are applied. |
-
----
-
-## Active / Under Review
+### Active / Under Review
 
 | Protocol | Platform | Severity | Summary |
 |----------|----------|----------|---------|
@@ -64,6 +64,18 @@ Independent smart contract and web security researcher. Active across **Cantina*
 | Renegade | C4 | High | `u128` underflow in `match_orders` corrupts order book state |
 | Chainlink PA V2 | C4 | High | `performUpkeep` accepts caller-supplied amount with no cap, allowing `AUCTION_WORKER_ROLE` to drain entire FeeAggregator balance |
 | Chainlink PA V2 | C4 | High | `auctionCallback` executes unrestricted `Call[]` array, enabling approval injection to drain `assetIn` from AuctionBidder |
+
+---
+
+## Production Systems
+
+| Project | Description | Links |
+|---------|-------------|-------|
+| Cerebro AI | Autonomous AI validator management platform | [cerebro.host](https://www.cerebro.host) · [XPR Network](https://explorer.xprnetwork.org/account/cerebroai) |
+| Metal Validator | Metal blockchain validator node | [GitHub](https://github.com/VirgilBB/Metal-Validator) · [Explorer](https://explorer.metalblockchain.org/validators/NodeID-HDdohvYFYmiQYN44aX9KC1pdg5hQTEeaU) |
+| Akash Validator | Akash network validator | [Stats](https://stats.akash.network/validators/akashvaloper163zp6lyavlg7r2cru8djmv6d8qnpvlm0nsnr6s?network=mainnet) |
+| DCRPulse | Decred staking dashboard | [GitHub](https://github.com/VirgilBB/dcrpulse) · [Live](https://dcr.cerebro.host/) |
+| vb-arms | US government contracts intelligence tracker | [GitHub](https://github.com/VirgilBB/vb-arms/tree/main) |
 
 ---
 
