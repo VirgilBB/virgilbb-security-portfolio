@@ -1,4 +1,4 @@
-# Security Research Portfolio — Virgil Bellini
+# VirgilBB — Security Portfolio
 
 Independent security researcher specializing in systemic infrastructure security, logic errors, and economic exploits. Active across **Cantina**, **Code4rena**, **Immunefi**, and **HackerOne**.
 
@@ -67,15 +67,25 @@ Independent security researcher specializing in systemic infrastructure security
 
 ---
 
+## Cerebro AI
+
+XPR Network block producer (primary revenue). Multi-chain infrastructure operator.
+
+- **Block Producer**: [cerebroai on XPR Network](https://explorer.xprnetwork.org/account/cerebroai)
+- **AGDP.io**: A2A microservices marketplace — [agdp.io/agent/9386](https://agdp.io/agent/9386)
+- **Moltbook**: A2A social platform — [moltbook.com/u/cerebro-ai](https://www.moltbook.com/u/cerebro-ai)
+- **GitHub**: [cerebro-host](https://github.com/VirgilBB/cerebro-host)
+
+---
+
 ## Production Systems
 
 | Project | Description | Links |
 |---------|-------------|-------|
-| Cerebro AI | Autonomous AI validator management platform | [cerebro.host](https://www.cerebro.host) · [XPR Network](https://explorer.xprnetwork.org/account/cerebroai) |
-| Metal Validator | Metal blockchain validator node | [GitHub](https://github.com/VirgilBB/Metal-Validator) · [Explorer](https://explorer.metalblockchain.org/validators/NodeID-HDdohvYFYmiQYN44aX9KC1pdg5hQTEeaU) |
+| VB Arms | FFL firearms & accessories ecommerce; government contract bidding via BidForge | [GitHub](https://github.com/VirgilBB/vb-arms/tree/main) |
+| Metal Node | Metal blockchain node | [GitHub](https://github.com/VirgilBB/Metal-Validator) · [Explorer](https://explorer.metalblockchain.org/validators/NodeID-HDdohvYFYmiQYN44aX9KC1pdg5hQTEeaU) |
 | Akash Validator | Akash network validator | [Stats](https://stats.akash.network/validators/akashvaloper163zp6lyavlg7r2cru8djmv6d8qnpvlm0nsnr6s?network=mainnet) |
 | DCRPulse | Decred staking dashboard | [GitHub](https://github.com/VirgilBB/dcrpulse) · [Live](https://dcr.cerebro.host/) |
-| vb-arms | US government contracts intelligence tracker | [GitHub](https://github.com/VirgilBB/vb-arms/tree/main) |
 
 ---
 
