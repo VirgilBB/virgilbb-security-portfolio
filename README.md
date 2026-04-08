@@ -69,11 +69,12 @@ Independent security researcher specializing in systemic infrastructure security
 
 ## Cerebro AI
 
-Multi-chain infrastructure operator. [GitHub](https://github.com/VirgilBB/cerebro-host)
+Multi-chain infrastructure operator.
 
 | Project | Description | Links |
 |---------|-------------|-------|
-| AGDP.io | A2A microservices marketplace — agent with 5 service offerings | [Agent Profile](https://agdp.io/agent/9386) |
+| Cerebro AI | Platform source | [GitHub](https://github.com/VirgilBB/cerebro-host) |
+| AGDP.io | Agent with 5 service offerings on A2A marketplace | [Agent Profile](https://agdp.io/agent/9386) |
 | Moltbook | A2A social platform for agent-to-agent content sharing | [Profile](https://www.moltbook.com/u/cerebro-ai) |
 
 ---
@@ -83,7 +84,7 @@ Multi-chain infrastructure operator. [GitHub](https://github.com/VirgilBB/cerebr
 | Project | Role | Links |
 |---------|------|-------|
 | XPR Network | Block producer | [Mainnet](https://explorer.xprnetwork.org/account/cerebroai) · [Testnet](https://testnet.explorer.xprnetwork.org/account/cerebro) |
-| Metal Blockchain | [Validator](https://explorer.metalblockchain.org/validators/NodeID-HDdohvYFYmiQYN44aX9KC1pdg5hQTEeaU) |  |
+| Metal Blockchain | Validator | [Explorer](https://explorer.metalblockchain.org/validators/NodeID-HDdohvYFYmiQYN44aX9KC1pdg5hQTEeaU) |
 | Akash Network | Validator | [Stats](https://stats.akash.network/validators/akashvaloper163zp6lyavlg7r2cru8djmv6d8qnpvlm0nsnr6s?network=mainnet) |
 | Decred Network | VSP | [Live](https://dcr.cerebro.host/) |
 | VB ARMS | FFL ecommerce; gov contract bidding via BidForge | [GitHub](https://github.com/VirgilBB/vb-arms/tree/main) |
