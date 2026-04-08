@@ -69,41 +69,32 @@ Independent security researcher specializing in systemic infrastructure security
 
 ## Cerebro AI
 
-XPR Network block producer. Multi-chain infrastructure operator.
+Multi-chain infrastructure operator. [GitHub](https://github.com/VirgilBB/cerebro-host)
 
-- **Block Producer**: [cerebroai on XPR Network](https://explorer.xprnetwork.org/account/cerebroai) · [Testnet](https://testnet.explorer.xprnetwork.org/account/cerebro)
-- **AGDP.io**: A2A microservices marketplace — [agdp.io/agent/9386](https://agdp.io/agent/9386)
-- **Moltbook**: A2A social platform — [moltbook.com/u/cerebro-ai](https://www.moltbook.com/u/cerebro-ai)
-- **GitHub**: [cerebro-host](https://github.com/VirgilBB/cerebro-host)
+- **AGDP.io**: Agent with 5 service offerings — [agdp.io/agent/9386](https://agdp.io/agent/9386)
+- **Moltbook**: [moltbook.com/u/cerebro-ai](https://www.moltbook.com/u/cerebro-ai)
 
 ---
 
 ## Production Systems
 
-| Project | Description | Links |
-|---------|-------------|-------|
-| VB Arms | FFL firearms & accessories ecommerce; government contract bidding via BidForge | [GitHub](https://github.com/VirgilBB/vb-arms/tree/main) |
-| Metal Validator | Metal blockchain validator | [GitHub](https://github.com/VirgilBB/Metal-Validator) · [Explorer](https://explorer.metalblockchain.org/validators/NodeID-HDdohvYFYmiQYN44aX9KC1pdg5hQTEeaU) |
-| Akash Validator | Akash network validator | [Stats](https://stats.akash.network/validators/akashvaloper163zp6lyavlg7r2cru8djmv6d8qnpvlm0nsnr6s?network=mainnet) |
-| DCRPulse | Decred network VSP (voting service provider) | [GitHub](https://github.com/VirgilBB/dcrpulse) · [Live](https://dcr.cerebro.host/) |
+| Project | Role | Links |
+|---------|------|-------|
+| XPR Network | Block producer | [Mainnet](https://explorer.xprnetwork.org/account/cerebroai) · [Testnet](https://testnet.explorer.xprnetwork.org/account/cerebro) |
+| Metal Validator | Validator | [GitHub](https://github.com/VirgilBB/Metal-Validator) · [Explorer](https://explorer.metalblockchain.org/validators/NodeID-HDdohvYFYmiQYN44aX9KC1pdg5hQTEeaU) |
+| Akash Validator | Validator | [Stats](https://stats.akash.network/validators/akashvaloper163zp6lyavlg7r2cru8djmv6d8qnpvlm0nsnr6s?network=mainnet) |
+| DCRPulse | VSP (voting service provider) | [GitHub](https://github.com/VirgilBB/dcrpulse) · [Live](https://dcr.cerebro.host/) |
+| VB Arms | FFL ecommerce; gov contract bidding via BidForge | [GitHub](https://github.com/VirgilBB/vb-arms/tree/main) |
 
 ---
 
 ## Methodology
 
-**Smart Contracts (Solidity)**
-- Manual review of state machines, accounting invariants, access control, and cross-function ordering
-- Focus: ordering races in LST protocols, accounting gaps in lending/withdrawal flows, delegatecall attack surfaces, reentrancy via non-obvious callback paths
-
-**Rust / CosmWasm**
-- Message ordering analysis (BankMsg vs SubMsg execution model, `reply_always` error absorption)
-- u128 overflow/underflow in fixed-point arithmetic
-- Cross-contract reply handler silent failure patterns
-
-**Web2 on Web3 Infrastructure**
-- OAuth flow analysis: missing `state` param, session token binding races
-- API endpoint enumeration on Web3 production infrastructure
-- CVE-mapped findings against vendor-provided test instances
+| Domain | Focus |
+|--------|-------|
+| Smart Contracts (Solidity) | State machines, accounting invariants, access control, cross-function ordering, delegatecall surfaces, reentrancy via non-obvious callback paths |
+| Rust / CosmWasm | Message ordering (BankMsg vs SubMsg), u128 overflow/underflow in fixed-point arithmetic, cross-contract reply handler silent failures |
+| Web2 on Web3 Infrastructure | OAuth flow analysis, session token binding races, API endpoint enumeration, CVE-mapped findings against production infrastructure |
 
 ---
 
