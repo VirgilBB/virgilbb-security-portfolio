@@ -8,7 +8,7 @@ Independent security researcher specializing in systemic infrastructure security
 
 | Metric | Value |
 |--------|-------|
-| Total Findings Submitted | 70+ |
+| Total Findings Submitted | 65+ |
 | Duplicate Findings | 29 |
 | Accepted (Pending Disclosure) | 2 |
 | Under Review | 11 |
