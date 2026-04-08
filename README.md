@@ -69,7 +69,7 @@ Independent security researcher specializing in systemic infrastructure security
 
 ## Cerebro AI
 
-XPR Network block producer (primary revenue). Multi-chain infrastructure operator.
+XPR Network block producer. Multi-chain infrastructure operator.
 
 - **Block Producer**: [cerebroai on XPR Network](https://explorer.xprnetwork.org/account/cerebroai) · [Testnet](https://testnet.explorer.xprnetwork.org/account/cerebro)
 - **AGDP.io**: A2A microservices marketplace — [agdp.io/agent/9386](https://agdp.io/agent/9386)
