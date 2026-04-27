@@ -57,7 +57,7 @@ Independent researcher specializing in systemic infrastructure security, logic e
 | Boba Network | High | `failedNativeDisbursements` keyed by `depositId` only — cross-chain collision permanently freezes failed native disbursements |
 | OKG | High | EIP-712 `Calls` struct `wallet` field bound to implementation address instead of wallet address |
 
-### Active / Under Review
+## Active / Under Review
 
 | Protocol | Platform | Severity | Summary |
 |----------|----------|----------|---------|
@@ -78,6 +78,20 @@ Independent researcher specializing in systemic infrastructure security, logic e
 | Magic Labs | Bugcrowd | High | End-to-end session impersonation via `@magic-sdk/admin` DID audience bypass (deprecated constructor) |
 | OKX DEX | Cantina | Medium | ETH commission referrer reentrancy via untrusted delegatecall in fee distribution path |
 | OKX DEX | Cantina | Medium | Partial fork weight causes input token permanent lock when rebalance is incomplete |
+
+---
+
+## Methodology
+
+| Phase / Component          | Process & Validation Details                                                                                                                                                                                                                                                                                           |
+| :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Taxonomy & Scope**       | 36-class vulnerability taxonomy covering DeFi, bridges, ZK circuits, governance, Web2 infrastructure, and emerging verticals.                                                                                                                                                                                          |
+| **Program Intake**         | Mandatory gate verifying scope, prior audits, and eligibility before analysis begins.                                                                                                                                                                                                                                  |
+| **Proof of Concept**       | Every finding validated with Foundry fork tests or Tenderly live-state simulation against mainnet (platform-appropriate runnable PoC for non-EVM targets).                                                                                                                                                             |
+| **Attack Surface Routing** | Protocol-type routing prioritizes highest-impact bug classes per target.                                                                                                                                                                                                                                               |
+| **Quality Benchmarking**   | Positive-exemplar anchoring—every report cross-referenced against a corpus of judge-selected $10K+ findings before submission.                                                                                                                                                                                         |
+| **Automated QA Gate**      | **Two-stage validation:**  <br>1. **Phase 2.6 Sweep:** 9-check structural analysis (placeholders, path purge, headers, duplicates, PoC completeness).  <br>2. **8-Block Preflight:** Program status, on-chain TVL, source reachability, governance preconditions, and hidden-content scans (Unicode/credential leaks). |
+| **Adversarial Review**     | **G9 Process:** Critical and High findings evaluated by an isolated hostile-triager sub-agent (context-isolated) to prevent confirmation bias.                                                                                                                                                                         |
 
 ---
 
@@ -113,20 +127,6 @@ Reproducible infrastructure templates deployed on Akash decentralized cloud.
 |----------|-------------|-------|
 | Metal Validator | Metal blockchain validator deployment template | [GitHub](https://github.com/VirgilBB/Metal-Validator) |
 | DCRPulse | Decred VSP deployment template | [GitHub](https://github.com/VirgilBB/dcrpulse) |
-
----
-
-## Methodology
-
-| Phase / Component          | Process & Validation Details                                                                                                                                                                                                                                                                                           |
-| :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Taxonomy & Scope**       | 36-class vulnerability taxonomy covering DeFi, bridges, ZK circuits, governance, Web2 infrastructure, and emerging verticals.                                                                                                                                                                                          |
-| **Program Intake**         | Mandatory gate verifying scope, prior audits, and eligibility before analysis begins.                                                                                                                                                                                                                                  |
-| **Proof of Concept**       | Every finding validated with Foundry fork tests or Tenderly live-state simulation against mainnet (platform-appropriate runnable PoC for non-EVM targets).                                                                                                                                                             |
-| **Attack Surface Routing** | Protocol-type routing prioritizes highest-impact bug classes per target.                                                                                                                                                                                                                                               |
-| **Quality Benchmarking**   | Positive-exemplar anchoring—every report cross-referenced against a corpus of judge-selected $10K+ findings before submission.                                                                                                                                                                                         |
-| **Automated QA Gate**      | **Two-stage validation:**  <br>1. **Phase 2.6 Sweep:** 9-check structural analysis (placeholders, path purge, headers, duplicates, PoC completeness).  <br>2. **8-Block Preflight:** Program status, on-chain TVL, source reachability, governance preconditions, and hidden-content scans (Unicode/credential leaks). |
-| **Adversarial Review**     | **G9 Process:** Critical and High findings evaluated by an isolated hostile-triager sub-agent (context-isolated) to prevent confirmation bias.                                                                                                                                                                         |
 
 ---
 
