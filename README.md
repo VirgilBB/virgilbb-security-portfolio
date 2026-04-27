@@ -1,28 +1,30 @@
-# VirgilBB — Security Portfolio
+# VirgilBB (Cerebro) — Security Portfolio
 
-Independent security researcher specializing in systemic infrastructure security, logic errors, and economic exploits. Active across **Cantina**, **Code4rena**, **Immunefi**, **HackerOne**, **HackenProof**, **Bugcrowd**, **Remedy**, and **Sherlock**.
+Independent researcher specializing in systemic infrastructure security, logic errors, and economic exploits. Active across **Cantina**, **Code4rena**, **HackerOne**, **HackenProof**, **Bugcrowd**, **Remedy**, **Sherlock**, and **Immunefi**.
 
 ---
 
 ## Stats
 
-| Metric | Value |
-|--------|-------|
-| Total Findings Submitted | 100 |
-| Duplicate Findings | 40 |
-| Accepted (Pending Disclosure) | 2 |
-| Under Review | 21 |
-| Platforms | Cantina · Code4rena · Immunefi · HackerOne · HackenProof · Bugcrowd · Remedy · Sherlock |
-| Specialties | Systemic Infrastructure Security · Logic Errors · Economic Exploits |
-| Primary Languages | Solidity · Rust (CosmWasm) · Python |
+| Metric                        | Value                                                                                   |
+| ----------------------------- | --------------------------------------------------------------------------------------- |
+| Total Findings Submitted      | 100                                                                                     |
+| Duplicate Findings            | 40                                                                                      |
+| Critical Duplicates           | 8                                                                                       |
+| High Duplicates               | 17                                                                                      |
+| Accepted (Pending Disclosure) | 2                                                                                       |
+| Under Review                  | 21                                                                                      |
+| Platforms                     | Cantina · Code4rena · HackerOne · HackenProof · Bugcrowd · Remedy · Sherlock · Immunefi |
+| Specialties                   | Systemic Infrastructure Security · Logic Errors · Economic Exploits                     |
+| Primary Languages             | Solidity · Rust (CosmWasm) · Python                                                     |
 
 ---
 
 ## Accepted — Pending Disclosure
 
-| Protocol | Platform | Severity | Status |
-|----------|----------|----------|--------|
-| Pending Disclosure | Cantina | High (×2) | 2 findings accepted. Cantina releases details once contest closes and patches are applied. |
+| Protocol           | Platform | Severity  | Status                                                 |
+| ------------------ | -------- | --------- | ------------------------------------------------------ |
+| Pending Disclosure | Cantina  | High (×2) | 2 accepted findings. Currently undisclosed on Cantina. |
 
 ---
 
@@ -32,43 +34,50 @@ Independent security researcher specializing in systemic infrastructure security
 
 | Protocol | Severity | Finding |
 |----------|----------|---------|
-| LiFi Executor (×6) | High | Executor approval drain, arbitrary calldata, permissionless swap paths |
-| Symbiotic (×5) | Critical/Med | Vault ACL front-run, BurnerRouter zero-address lock, onSlash access control, setResolver bypass, hook role enforcement |
 | Kuru DEX | Critical | ETH permanently locked in ERC20/ERC20 `depositSingleSide` |
-| Doppler | Medium | `tickAccumulator` corruption in slot0 rebalance (N-epoch amplified) |
-| Kiln | High | Withdrawer revert deadlock |
-| Revert Finance | Medium | `V3Oracle` `twapSeconds=0` allows instant TWAP manipulation |
-| Berachain | High | Honey oracle staleness in basket mode |
-| Midas (×2) | Medium | `redeemInstant` allowance overcounting; `RedemptionVaultWithBUIDL`/`USTB` replicate same overcounting bug |
-| Pendle Boros | Medium | `agentExpiry` timestamp bug |
-| USDai | Medium | `DepositTimelock.refundWithdrawAmount` misdirected to wrong recipient |
-| Concrete | High | `cancelRequest` uses `msg.sender` instead of request owner, permanently locking shares |
-| Reserve Protocol | High | `ImmutableTokenJar` permissionless drain of non-target tokens in permissionless mode |
 | Redstone | Critical | `getUniqueSignersThreshold()==0` silently disables all signature verification (triager upgraded High→Critical before dup close) |
 | OKX DEX (×2) | Critical | `DagRouter._MODE_BY_INVEST` drains router balance; `PMMAdaptor` unauthenticated calldata-tail payer drains adapter ERC-20 |
-| PancakeSwap (×2) | High | `CL_INCREASE_FROM_DELTAS` fee theft; `CL_MINT_FROM_DELTAS` principal theft |
 | BitGo eth-multisig-v2 | Critical | `tryInsertSequenceId` integer overflow permanently locks wallet |
-| BitGo eth-multisig-v4 | High | Cross-function reentrancy in WalletSimple drains ETH and ERC-20 tokens simultaneously |
-| Kinetiq (×2) | High | Withdrawer revert deadlock permanently locks ETH in FeeRecipient; `executeEmergencyWithdrawal` omits accounting updates, inflating exchange ratio |
-| LiNEAR Protocol (×2) | Critical/High | `drain_withdraw` missing manager access control allows permissionless validator drain; unchecked subtraction in `validator_get_balance_callback` panics on validator slashing |
+| LiNEAR Protocol | Critical | `drain_withdraw` missing manager access control allows permissionless validator drain |
 | Modular Account V2 | Critical | `AllowlistModule` hook passes native selectors, enabling session key to replace proxy implementation |
-| OKG | High | EIP-712 Calls struct `wallet` field bound to implementation address instead of wallet address |
+| Symbiotic | Critical | Vault ACL front-run enables malicious delegator installation at initialization |
+| UFarm | Critical | `highWaterMark` unit mismatch — premature performance fee extraction |
+| Autopool | Critical | `getFloorCeilingPrice` LP oracle dimensional error — 6,680× overvaluation on Curve V2 pool |
+| LiFi Executor (×3) | High | No-ACL arbitrary calldata drain via `swapAndCompleteBridgeTokens`; missing `ReentrancyGuard`; `ReceiverOIF` stranded principal |
+| PancakeSwap (×2) | High | `CL_INCREASE_FROM_DELTAS` fee theft; `CL_MINT_FROM_DELTAS` principal theft |
+| Berachain | High | Honey oracle staleness in basket mode |
+| Kinetiq (×2) | High | Withdrawer revert deadlock permanently locks ETH in FeeRecipient; `executeEmergencyWithdrawal` omits accounting updates, inflating exchange ratio |
+| Reserve Protocol | High | `ImmutableTokenJar` permissionless drain of non-target tokens in permissionless mode |
+| BitGo eth-multisig-v4 | High | Cross-function reentrancy in WalletSimple drains ETH and ERC-20 tokens simultaneously |
+| LiNEAR Protocol | High | Unchecked subtraction in `validator_get_balance_callback` panics on validator slashing |
+| Midas | High | `redeemInstant` allowance overcounting — double-spend via repeated partial redeems |
+| Concrete | High | `cancelRequest` uses `msg.sender` instead of request owner, permanently locking shares |
+| Blockdaemon ARC | High | `--arc.hide-pending-txs` does not sanitize `eth_getBlockByNumber("pending")` in JSON-RPC batch requests |
+| NEAR Intents Bridges | High | Replay guard removal in `fin_transfer_send_tokens_callback` enables EVM→NEAR proof reuse |
+| Boba Network | High | `failedNativeDisbursements` keyed by `depositId` only — cross-chain collision permanently freezes failed native disbursements |
+| OKG | High | EIP-712 `Calls` struct `wallet` field bound to implementation address instead of wallet address |
 
 ### Active / Under Review
 
 | Protocol | Platform | Severity | Summary |
 |----------|----------|----------|---------|
+| Autopool | Remedy | Critical | Division-by-zero in `AutopoolDebt.totalAssetsTimeChecked` freezes Autopool after full destination exit |
+| Aurora Bridge | HackenProof | Critical | Proof replay via `remove_fin_transfer` after `ft_on_transfer` rejection inflates bridged token supply |
 | Dynamic.xyz | HackerOne | Critical | OAuth CSRF via missing state parameter enables Google/GitHub account linking without user consent |
-| Dynamic.xyz | HackerOne | Critical | Unauthenticated endpoint exposes OAuth client IDs, masked secrets, and third-party API keys |
-| NetScaler | HackerOne | Medium | RelayState reflected without HTML-encoding in `/cgi/logout` enables session cookie theft via XSS |
 | Sablier | Cantina | Critical | Merkle multichain replay: cross-chain replay after TTL expiry reactivates expired proofs |
-| OKX DEX | Cantina | Medium | ETH commission referrer reentrancy via untrusted delegatecall in fee distribution path |
-| OKX DEX | Cantina | Medium | Partial fork weight causes input token permanent lock when rebalance is incomplete |
-| LayerZero Stellar | C4 | High | DVN `UsedHash` TTL persistent storage replay after 30-day expiry |
-| LayerZero Stellar | C4 | High | Endpoint `freeze_ttl_configs(None)` silently disables TTL with no recovery path |
-| Renegade | C4 | High | `u128` underflow in `match_orders` corrupts order book state |
+| NEAR Intents | HackenProof | High | Replay guard removal in `fin_transfer_send_tokens_callback` enables double-processing of bridged transfers |
+| Asphere | HackenProof | High | Static OAuth state parameter enables login CSRF and account fixation on auth.api.asphere.xyz |
+| NetScaler | HackerOne | High | Session slot race — cross-user session swap (CVE-2026-4368) |
+| Aurora | HackenProof | High | Unauthenticated `/api/munzen/signature` proxy redirects fiat purchases to arbitrary wallet |
+| BOB | Remedy | High | `TimelockStakingPool` solvency check fails when stake token equals reward token — last stakers' funds locked |
+| XRPL | Sherlock | High | ElGamal 1M cap disables issuer clawback |
 | Chainlink PA V2 | C4 | High | `performUpkeep` accepts caller-supplied amount with no cap, allowing `AUCTION_WORKER_ROLE` to drain entire FeeAggregator balance |
 | Chainlink PA V2 | C4 | High | `auctionCallback` executes unrestricted `Call[]` array, enabling approval injection to drain `assetIn` from AuctionBidder |
+| K2 Finance | C4 | High | Ceiling division inflates health factor, blocking liquidation |
+| K2 Finance | C4 | High | Expired override poisons circuit breaker |
+| Magic Labs | Bugcrowd | High | End-to-end session impersonation via `@magic-sdk/admin` DID audience bypass (deprecated constructor) |
+| OKX DEX | Cantina | Medium | ETH commission referrer reentrancy via untrusted delegatecall in fee distribution path |
+| OKX DEX | Cantina | Medium | Partial fork weight causes input token permanent lock when rebalance is incomplete |
 
 ---
 
@@ -86,13 +95,13 @@ Multi-chain infrastructure operator.
 
 ## Production Systems
 
-| Project | Role | Links |
-|---------|------|-------|
-| XPR Network | Block producer | [Mainnet](https://explorer.xprnetwork.org/account/cerebroai) · [Testnet](https://testnet.explorer.xprnetwork.org/account/cerebro) |
-| Metal Blockchain | Validator | [Explorer](https://explorer.metalblockchain.org/validators/NodeID-HDdohvYFYmiQYN44aX9KC1pdg5hQTEeaU) |
-| Akash Network | Validator | [Stats](https://stats.akash.network/validators/akashvaloper163zp6lyavlg7r2cru8djmv6d8qnpvlm0nsnr6s?network=mainnet) |
-| Decred Network | VSP | [Live](https://dcr.cerebro.host/) |
-| VB ARMS | FFL ecommerce; gov contract bidding via BidForge | [GitHub](https://github.com/VirgilBB/vb-arms/tree/main) |
+| Project          | Role                                             | Links                                                                                                                             |
+| ---------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+| XPR Network      | Block producer                                   | [Mainnet](https://explorer.xprnetwork.org/account/cerebroai) · [Testnet](https://testnet.explorer.xprnetwork.org/account/cerebro) |
+| Metal Blockchain | Validator                                        | [Explorer](https://explorer.metalblockchain.org/validators/NodeID-HDdohvYFYmiQYN44aX9KC1pdg5hQTEeaU)                              |
+| Akash Network    | Validator                                        | [Stats](https://stats.akash.network/validators/akashvaloper163zp6lyavlg7r2cru8djmv6d8qnpvlm0nsnr6s?network=mainnet)               |
+| Decred Network   | VSP - Virtual Service Provider                   | [Live](https://dcr.cerebro.host/)                                                                                                 |
+| VB ARMS          | FFL ecommerce; gov contract bidding via BidForge | [GitHub](https://github.com/VirgilBB/vb-arms/tree/main)                                                                           |
 
 ---
 
@@ -109,12 +118,15 @@ Reproducible infrastructure templates deployed on Akash decentralized cloud.
 
 ## Methodology
 
-- 36-class vulnerability taxonomy covering DeFi, bridges, ZK circuits, governance, Web2 infrastructure, and emerging verticals
-- Mandatory program intake gate — scope, prior audits, and eligibility verified before analysis begins
-- Every finding validated with Foundry fork tests against live chain state (or platform-appropriate runnable PoC for non-EVM targets)
-- Protocol-type routing to prioritize highest-impact bug classes per target
-- Positive-exemplar anchoring — every report cross-referenced against a corpus of judge-selected $10K+ findings before submission
-- 13-block pre-validation gate covering program status, duplicates, audit history, PoC gas/body validation, on-chain TVL, source reachability, governance preconditions, structural integrity (USD impact, fix recommendation, line refs, code blocks), and hidden-content scans (invisible Unicode + credential leaks)
+| Phase / Component          | Process & Validation Details                                                                                                                                                                                                                                                                                           |
+| :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Taxonomy & Scope**       | 36-class vulnerability taxonomy covering DeFi, bridges, ZK circuits, governance, Web2 infrastructure, and emerging verticals.                                                                                                                                                                                          |
+| **Program Intake**         | Mandatory gate verifying scope, prior audits, and eligibility before analysis begins.                                                                                                                                                                                                                                  |
+| **Proof of Concept**       | Every finding validated with Foundry fork tests or Tenderly live-state simulation against mainnet (platform-appropriate runnable PoC for non-EVM targets).                                                                                                                                                             |
+| **Attack Surface Routing** | Protocol-type routing prioritizes highest-impact bug classes per target.                                                                                                                                                                                                                                               |
+| **Quality Benchmarking**   | Positive-exemplar anchoring—every report cross-referenced against a corpus of judge-selected $10K+ findings before submission.                                                                                                                                                                                         |
+| **Automated QA Gate**      | **Two-stage validation:**  <br>1. **Phase 2.6 Sweep:** 9-check structural analysis (placeholders, path purge, headers, duplicates, PoC completeness).  <br>2. **8-Block Preflight:** Program status, on-chain TVL, source reachability, governance preconditions, and hidden-content scans (Unicode/credential leaks). |
+| **Adversarial Review**     | **G9 Process:** Critical and High findings evaluated by an isolated hostile-triager sub-agent (context-isolated) to prevent confirmation bias.                                                                                                                                                                         |
 
 ---
 
