@@ -9,11 +9,11 @@ Independent researcher specializing in systemic infrastructure security, logic e
 | Metric                        | Value                                                                                   |
 | ----------------------------- | --------------------------------------------------------------------------------------- |
 | Total Findings Submitted      | 100                                                                                     |
-| Duplicate Findings            | 40                                                                                      |
+| Duplicate Findings            | 41                                                                                      |
 | Critical Duplicates           | 8                                                                                       |
-| High Duplicates               | 17                                                                                      |
+| High Duplicates               | 18                                                                                      |
 | Accepted (Pending Disclosure) | 2                                                                                       |
-| Under Review                  | 21                                                                                      |
+| Under Review                  | 19                                                                                      |
 | Platforms                     | Cantina · Code4rena · HackerOne · HackenProof · Bugcrowd · Remedy · Sherlock · Immunefi |
 | Specialties                   | Systemic Infrastructure Security · Logic Errors · Economic Exploits                     |
 | Primary Languages             | Solidity · Rust (CosmWasm) · Python                                                     |
@@ -56,6 +56,7 @@ Independent researcher specializing in systemic infrastructure security, logic e
 | NEAR Intents Bridges | High | Replay guard removal in `fin_transfer_send_tokens_callback` enables EVM→NEAR proof reuse |
 | Boba Network | High | `failedNativeDisbursements` keyed by `depositId` only — cross-chain collision permanently freezes failed native disbursements |
 | OKG | High | EIP-712 `Calls` struct `wallet` field bound to implementation address instead of wallet address |
+| NetScaler | High | Session slot race — cross-user session swap (CVE-2026-4368) |
 
 ## Active / Under Review
 
@@ -67,8 +68,6 @@ Independent researcher specializing in systemic infrastructure security, logic e
 | Sablier | Cantina | Critical | Merkle multichain replay: cross-chain replay after TTL expiry reactivates expired proofs |
 | NEAR Intents | HackenProof | High | Replay guard removal in `fin_transfer_send_tokens_callback` enables double-processing of bridged transfers |
 | Asphere | HackenProof | High | Static OAuth state parameter enables login CSRF and account fixation on auth.api.asphere.xyz |
-| NetScaler | HackerOne | High | Session slot race — cross-user session swap (CVE-2026-4368) |
-| Aurora | HackenProof | High | Unauthenticated `/api/munzen/signature` proxy redirects fiat purchases to arbitrary wallet |
 | BOB | Remedy | High | `TimelockStakingPool` solvency check fails when stake token equals reward token — last stakers' funds locked |
 | XRPL | Sherlock | High | ElGamal 1M cap disables issuer clawback |
 | Chainlink PA V2 | C4 | High | `performUpkeep` accepts caller-supplied amount with no cap, allowing `AUCTION_WORKER_ROLE` to drain entire FeeAggregator balance |
