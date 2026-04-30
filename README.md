@@ -8,12 +8,12 @@ Independent researcher specializing in systemic infrastructure security, logic e
 
 | Metric                        | Value                                                                                   |
 | ----------------------------- | --------------------------------------------------------------------------------------- |
-| Total Findings Submitted      | 100                                                                                     |
+| Total Findings Submitted      | 101                                                                                     |
 | Duplicate Findings            | 41                                                                                      |
 | Critical Duplicates           | 8                                                                                       |
 | High Duplicates               | 18                                                                                      |
 | Accepted (Pending Disclosure) | 2                                                                                       |
-| Under Review                  | 19                                                                                      |
+| Under Review                  | 20                                                                                      |
 | Platforms                     | Cantina · Code4rena · HackerOne · HackenProof · Bugcrowd · Remedy · Sherlock · Immunefi |
 | Specialties                   | Systemic Infrastructure Security · Logic Errors · Economic Exploits                     |
 | Primary Languages             | Solidity · Rust (CosmWasm) · Python                                                     |
@@ -75,6 +75,7 @@ Independent researcher specializing in systemic infrastructure security, logic e
 | K2 Finance | C4 | High | Ceiling division inflates health factor, blocking liquidation |
 | K2 Finance | C4 | High | Expired override poisons circuit breaker |
 | Magic Labs | Bugcrowd | High | End-to-end session impersonation via `@magic-sdk/admin` DID audience bypass (deprecated constructor) |
+| Reserve Governor | Cantina | Medium | Emergency council `deprecateVersion` on `latestVersion` permanently bricks StakingVault upgrades; owner-only recovery path |
 | OKX DEX | Cantina | Medium | ETH commission referrer reentrancy via untrusted delegatecall in fee distribution path |
 | OKX DEX | Cantina | Medium | Partial fork weight causes input token permanent lock when rebalance is incomplete |
 
@@ -137,3 +138,4 @@ Reproducible infrastructure templates deployed on Akash decentralized cloud.
 ---
 
 *Last updated: 2026-04-30*
+
