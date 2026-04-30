@@ -136,4 +136,4 @@ Reproducible infrastructure templates deployed on Akash decentralized cloud.
 
 ---
 
-*Last updated: 2026-04-28*
+*Last updated: 2026-04-30*
