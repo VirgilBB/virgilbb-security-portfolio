@@ -8,12 +8,12 @@ Independent researcher specializing in systemic infrastructure security, logic e
 
 | Metric                        | Value                                                                                   |
 | ----------------------------- | --------------------------------------------------------------------------------------- |
-| Total Findings Submitted      | 101                                                                                     |
-| Duplicate Findings            | 41                                                                                      |
+| Total Findings Submitted      | 104                                                                                  |
+| Duplicate Findings            | 41                                                                                   |
 | Critical Duplicates           | 8                                                                                       |
 | High Duplicates               | 18                                                                                      |
 | Accepted (Pending Disclosure) | 2                                                                                       |
-| Under Review                  | 20                                                                                      |
+| Under Review                  | 22                                                                                   |
 | Platforms                     | Cantina · Code4rena · HackerOne · HackenProof · Bugcrowd · Remedy · Sherlock · Immunefi |
 | Specialties                   | Systemic Infrastructure Security · Logic Errors · Economic Exploits                     |
 | Primary Languages             | Solidity · Rust (CosmWasm) · Python                                                     |
