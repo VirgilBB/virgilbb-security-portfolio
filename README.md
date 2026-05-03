@@ -8,15 +8,15 @@ Independent researcher specializing in systemic infrastructure security, logic e
 
 | Metric                        | Value                                                                                   |
 | ----------------------------- | --------------------------------------------------------------------------------------- |
-| Total Findings Submitted      | 104                                                                                  |
-| Duplicate Findings            | 41                                                                                   |
+| Total Findings Submitted      | 104                                                                                     |
+| Duplicate Findings            | 41                                                                                      |
 | Critical Duplicates           | 8                                                                                       |
 | High Duplicates               | 18                                                                                      |
 | Accepted (Pending Disclosure) | 2                                                                                       |
-| Under Review                  | 22                                                                                   |
+| Under Review                  | 22                                                                                      |
 | Platforms                     | Cantina · Code4rena · HackerOne · HackenProof · Bugcrowd · Remedy · Sherlock · Immunefi |
 | Specialties                   | Systemic Infrastructure Security · Logic Errors · Economic Exploits                     |
-| Primary Languages             | Solidity · Rust (CosmWasm) · Python                                                     |
+| Primary Languages             | Solidity · Rust (CosmWasm) · Python · Move · Cairo · Anchor · TS/JS                     |
 
 ---
 
@@ -60,24 +60,30 @@ Independent researcher specializing in systemic infrastructure security, logic e
 
 ## Active / Under Review
 
-| Protocol | Platform | Severity | Summary |
-|----------|----------|----------|---------|
-| Autopool | Remedy | Critical | Division-by-zero in `AutopoolDebt.totalAssetsTimeChecked` freezes Autopool after full destination exit |
-| Aurora Bridge | HackenProof | Critical | Proof replay via `remove_fin_transfer` after `ft_on_transfer` rejection inflates bridged token supply |
-| Dynamic.xyz | HackerOne | Critical | OAuth CSRF via missing state parameter enables Google/GitHub account linking without user consent |
-| Sablier | Cantina | Critical | Merkle multichain replay: cross-chain replay after TTL expiry reactivates expired proofs |
-| NEAR Intents | HackenProof | High | Replay guard removal in `fin_transfer_send_tokens_callback` enables double-processing of bridged transfers |
-| Asphere | HackenProof | High | Static OAuth state parameter enables login CSRF and account fixation on auth.api.asphere.xyz |
-| BOB | Remedy | High | `TimelockStakingPool` solvency check fails when stake token equals reward token — last stakers' funds locked |
-| XRPL | Sherlock | High | ElGamal 1M cap disables issuer clawback |
-| Chainlink PA V2 | C4 | High | `performUpkeep` accepts caller-supplied amount with no cap, allowing `AUCTION_WORKER_ROLE` to drain entire FeeAggregator balance |
-| Chainlink PA V2 | C4 | High | `auctionCallback` executes unrestricted `Call[]` array, enabling approval injection to drain `assetIn` from AuctionBidder |
-| K2 Finance | C4 | High | Ceiling division inflates health factor, blocking liquidation |
-| K2 Finance | C4 | High | Expired override poisons circuit breaker |
-| Magic Labs | Bugcrowd | High | End-to-end session impersonation via `@magic-sdk/admin` DID audience bypass (deprecated constructor) |
-| Reserve Governor | Cantina | Medium | Emergency council `deprecateVersion` on `latestVersion` permanently bricks StakingVault upgrades; owner-only recovery path |
-| OKX DEX | Cantina | Medium | ETH commission referrer reentrancy via untrusted delegatecall in fee distribution path |
-| OKX DEX | Cantina | Medium | Partial fork weight causes input token permanent lock when rebalance is incomplete |
+| Protocol              | Platform    | Severity |
+| --------------------- | ----------- | -------- |
+| SafeSwap              | HackenProof | Critical |
+| Tokemak / auto.finance| Remedy      | Critical |
+| Magic Labs            | Bugcrowd    | Critical |
+| Renegade              | C4          | High     |
+| Rujira                | C4          | High     |
+| SafeSwap              | HackenProof | High     |
+| SafeSwap              | HackenProof | High     |
+| XRPL                  | Sherlock    | High     |
+| K2 Finance            | C4          | High     |
+| Asphere               | HackenProof | High     |
+| BOB                   | Remedy      | High     |
+| OKX DEX               | Cantina     | Medium   |
+| OKX DEX               | Cantina     | Medium   |
+| K2 Finance            | C4          | Medium   |
+| Reserve Governor      | Cantina     | Medium   |
+| Backblaze             | Bugcrowd    | Medium   |
+| Immutable             | Bugcrowd    | Medium   |
+| Ventuals              | Cantina     | Medium   |
+| Ventuals              | Cantina     | Medium   |
+| Reserve               | Cantina     | Low      |
+| Reserve               | Cantina     | Low      |
+| BigONE                | HackenProof | Low      |
 
 ---
 
@@ -137,5 +143,5 @@ Reproducible infrastructure templates deployed on Akash decentralized cloud.
 
 ---
 
-*Last updated: 2026-05-01*
+*Last updated: 2026-05-03*
 
