@@ -32,31 +32,28 @@ Independent researcher specializing in systemic infrastructure security, logic e
 
 ### Duplicates
 
-| # | Protocol | Severity | Finding |
-|---|----------|----------|---------|
-| 1 | Kuru DEX | Critical | ETH permanently locked in ERC20/ERC20 `depositSingleSide` |
-| 2 | Redstone | Critical | `getUniqueSignersThreshold()==0` silently disables all signature verification (triager upgraded High→Critical before dup close) |
-| 3 | OKX DEX (×2) | Critical | `DagRouter._MODE_BY_INVEST` drains router balance; `PMMAdaptor` unauthenticated calldata-tail payer drains adapter ERC-20 |
-| 4 | BitGo eth-multisig-v2 | Critical | `tryInsertSequenceId` integer overflow permanently locks wallet |
-| 5 | LiNEAR Protocol | Critical | `drain_withdraw` missing manager access control allows permissionless validator drain |
-| 6 | Modular Account V2 | Critical | `AllowlistModule` hook passes native selectors, enabling session key to replace proxy implementation |
-| 7 | Symbiotic | Critical | Vault ACL front-run enables malicious delegator installation at initialization |
-| 8 | UFarm | Critical | `highWaterMark` unit mismatch — premature performance fee extraction |
-| 9 | Autopool | Critical | `getFloorCeilingPrice` LP oracle dimensional error — 6,680× overvaluation on Curve V2 pool |
-| 10 | LiFi Executor (×3) | High | No-ACL arbitrary calldata drain via `swapAndCompleteBridgeTokens`; missing `ReentrancyGuard`; `ReceiverOIF` stranded principal |
-| 11 | PancakeSwap (×2) | High | `CL_INCREASE_FROM_DELTAS` fee theft; `CL_MINT_FROM_DELTAS` principal theft |
-| 12 | Berachain | High | Honey oracle staleness in basket mode |
-| 13 | Kinetiq (×2) | High | Withdrawer revert deadlock permanently locks ETH in FeeRecipient; `executeEmergencyWithdrawal` omits accounting updates, inflating exchange ratio |
-| 14 | Reserve Protocol | High | `ImmutableTokenJar` permissionless drain of non-target tokens in permissionless mode |
-| 15 | BitGo eth-multisig-v4 | High | Cross-function reentrancy in WalletSimple drains ETH and ERC-20 tokens simultaneously |
-| 16 | LiNEAR Protocol | High | Unchecked subtraction in `validator_get_balance_callback` panics on validator slashing |
-| 17 | Midas | High | `redeemInstant` allowance overcounting — double-spend via repeated partial redeems |
-| 18 | Concrete | High | `cancelRequest` uses `msg.sender` instead of request owner, permanently locking shares |
-| 19 | Blockdaemon ARC | High | `--arc.hide-pending-txs` does not sanitize `eth_getBlockByNumber("pending")` in JSON-RPC batch requests |
-| 20 | NEAR Intents Bridges | High | Replay guard removal in `fin_transfer_send_tokens_callback` enables EVM→NEAR proof reuse |
-| 21 | Boba Network | High | `failedNativeDisbursements` keyed by `depositId` only — cross-chain collision permanently freezes failed native disbursements |
-| 22 | OKG | High | EIP-712 `Calls` struct `wallet` field bound to implementation address instead of wallet address |
-| 23 | NetScaler | High | Session slot race — cross-user session swap (CVE-2026-4368) |
+| #   | Protocol              | Severity | Finding                                                                                                                                           |
+| --- | --------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Kuru DEX              | Critical | ETH permanently locked in ERC20/ERC20 `depositSingleSide`                                                                                         |
+| 2   | Redstone              | Critical | `getUniqueSignersThreshold()==0` silently disables all signature verification (triager upgraded High→Critical before dup close)                   |
+| 3   | OKX DEX (×2)          | Critical | `DagRouter._MODE_BY_INVEST` drains router balance; `PMMAdaptor` unauthenticated calldata-tail payer drains adapter ERC-20                         |
+| 4   | BitGo eth-multisig-v2 | Critical | `tryInsertSequenceId` integer overflow permanently locks wallet                                                                                   |
+| 5   | LiNEAR Protocol       | Critical | `drain_withdraw` missing manager access control allows permissionless validator drain                                                             |
+| 6   | Modular Account V2    | Critical | `AllowlistModule` hook passes native selectors, enabling session key to replace proxy implementation                                              |
+| 7   | Symbiotic             | Critical | Vault ACL front-run enables malicious delegator installation at initialization                                                                    |
+| 8   | UFarm                 | Critical | `highWaterMark` unit mismatch — premature performance fee extraction                                                                              |
+| 9   | Autopool              | Critical | `getFloorCeilingPrice` LP oracle dimensional error — 6,680× overvaluation on Curve V2 pool                                                        |
+| 10  | LiFi Executor (×3)    | High     | No-ACL arbitrary calldata drain via `swapAndCompleteBridgeTokens`; missing `ReentrancyGuard`; `ReceiverOIF` stranded principal                    |
+| 11  | PancakeSwap (×2)      | High     | `CL_INCREASE_FROM_DELTAS` fee theft; `CL_MINT_FROM_DELTAS` principal theft                                                                        |
+| 12  | Berachain             | High     | Honey oracle staleness in basket mode                                                                                                             |
+| 13  | Kinetiq (×2)          | High     | Withdrawer revert deadlock permanently locks ETH in FeeRecipient; `executeEmergencyWithdrawal` omits accounting updates, inflating exchange ratio |
+| 14  | Reserve Protocol      | High     | `ImmutableTokenJar` permissionless drain of non-target tokens in permissionless mode                                                              |
+| 15  | BitGo eth-multisig-v4 | High     | Cross-function reentrancy in WalletSimple drains ETH and ERC-20 tokens simultaneously                                                             |
+| 16  | LiNEAR Protocol       | High     | Unchecked subtraction in `validator_get_balance_callback` panics on validator slashing                                                            |
+| 17  | Midas                 | High     | `redeemInstant` allowance overcounting — double-spend via repeated partial redeems                                                                |
+| 18  | Concrete              | High     | `cancelRequest` uses `msg.sender` instead of request owner, permanently locking shares                                                            |
+| 19  | Blockdaemon ARC       | High     | `--arc.hide-pending-txs` does not sanitize `eth_getBlockByNumber("pending")` in JSON-RPC batch requests                                           |
+| 20  | NEAR Intents Bridges  | High     | Replay guard removal in `fin_transfer_send_tokens_callback` enables EVM→NEAR proof reuse                                                          |
 
 ## Active / Under Review
 
