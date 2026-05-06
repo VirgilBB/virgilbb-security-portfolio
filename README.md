@@ -8,12 +8,12 @@ Independent researcher specializing in systemic infrastructure security, logic e
 
 | Metric                        | Value                                                                                   |
 | ----------------------------- | --------------------------------------------------------------------------------------- |
-| Total Findings Submitted      | 104                                                                                     |
-| Duplicate Findings            | 41                                                                                      |
+| Total Findings Submitted      | 107 |
+| Duplicate Findings            | 43 |
 | Critical Duplicates           | 8                                                                                       |
 | High Duplicates               | 18                                                                                      |
 | Accepted (Pending Disclosure) | 2                                                                                       |
-| Under Review                  | 22                                                                                      |
+| Under Review                  | 18 |
 | Platforms                     | Cantina · Code4rena · HackerOne · HackenProof · Bugcrowd · Remedy · Sherlock · Immunefi |
 | Specialties                   | Systemic Infrastructure Security · Logic Errors · Economic Exploits                     |
 | Primary Languages             | Solidity · Rust (CosmWasm) · Python · Move · Cairo · Anchor · TS/JS                     |
@@ -47,7 +47,7 @@ Independent researcher specializing in systemic infrastructure security, logic e
 | 11  | PancakeSwap (×2)      | High     | `CL_INCREASE_FROM_DELTAS` fee theft; `CL_MINT_FROM_DELTAS` principal theft                                                                        |
 | 12  | Berachain             | High     | Honey oracle staleness in basket mode                                                                                                             |
 | 13  | Kinetiq (×2)          | High     | Withdrawer revert deadlock permanently locks ETH in FeeRecipient; `executeEmergencyWithdrawal` omits accounting updates, inflating exchange ratio |
-| 14  | Reserve Protocol      | High     | `ImmutableTokenJar` permissionless drain of non-target tokens in permissionless mode                                                              |
+| 14  | Reserve Protocol      | High     | `ImmutableTokenJar` permissionless drain of non-target tokens in permissionless mode                                                             |
 | 15  | BitGo eth-multisig-v4 | High     | Cross-function reentrancy in WalletSimple drains ETH and ERC-20 tokens simultaneously                                                             |
 | 16  | LiNEAR Protocol       | High     | Unchecked subtraction in `validator_get_balance_callback` panics on validator slashing                                                            |
 | 17  | Midas                 | High     | `redeemInstant` allowance overcounting — double-spend via repeated partial redeems                                                                |
@@ -60,27 +60,23 @@ Independent researcher specializing in systemic infrastructure security, logic e
 | #  | Protocol               | Platform    | Severity |
 | -- | ---------------------- | ----------- | -------- |
 | 1  | SafeSwap               | HackenProof | Critical |
-| 2  | Tokemak / auto.finance | Remedy      | Critical |
+| 2  | Tokemak Autopilot / auto.finance | Remedy      | Critical |
 | 3  | Magic Labs             | Bugcrowd    | Critical |
-| 4  | Renegade               | C4          | High     |
-| 5  | Rujira                 | C4          | High     |
-| 6  | SafeSwap               | HackenProof | High     |
-| 7  | SafeSwap               | HackenProof | High     |
-| 8  | XRPL                   | Sherlock    | High     |
-| 9  | K2 Finance             | C4          | High     |
-| 10 | Asphere                | HackenProof | High     |
-| 11 | BOB                    | Remedy      | High     |
-| 12 | OKX DEX                | Cantina     | Medium   |
-| 13 | OKX DEX                | Cantina     | Medium   |
-| 14 | K2 Finance             | C4          | Medium   |
-| 15 | Reserve Governor       | Cantina     | Medium   |
-| 16 | Backblaze              | Bugcrowd    | Medium   |
-| 17 | Immutable              | Bugcrowd    | Medium   |
-| 18 | Ventuals               | Cantina     | Medium   |
-| 19 | Ventuals               | Cantina     | Medium   |
-| 20 | Reserve                | Cantina     | Low      |
-| 21 | Reserve                | Cantina     | Low      |
-| 22 | BigONE                 | HackenProof | Low      |
+| 4  | Renegade               | C4          | High |
+| 5  | Rujira                 | C4          | High |
+| 6  | SafeSwap               | HackenProof | High |
+| 7  | XRPL April 2026        | Sherlock    | High |
+| 8  | K2                     | C4          | High |
+| 9  | SafeSwap               | HackenProof | High |
+| 10 | Asphere                | HackenProof | High |
+| 11 | BOB                    | Remedy      | High |
+| 12 | K2                     | C4          | Medium |
+| 13 | reserve-governor       | Cantina     | Medium |
+| 14 | Backblaze              | Bugcrowd    | Medium |
+| 15 | Ventuals               | Cantina     | Medium |
+| 16 | Ventuals               | Cantina     | Medium |
+| 17 | Aztec Network Bug Bounty | Cantina     | Medium |
+| 18 | BigONE                 | HackenProof | Low |
 
 ---
 
@@ -140,5 +136,5 @@ Reproducible infrastructure templates deployed on Akash decentralized cloud.
 
 ---
 
-*Last updated: 2026-05-05*
+*Last updated: 2026-05-06*
 
