@@ -9,11 +9,11 @@ Independent researcher specializing in systemic infrastructure security, logic e
 | Metric                        | Value                                                                                   |
 | ----------------------------- | --------------------------------------------------------------------------------------- |
 | Total Findings Submitted      | 107 |
-| Duplicate Findings            | 43 |
+| Duplicate Findings            | 45 |
 | Critical Duplicates           | 8                                                                                       |
-| High Duplicates               | 18                                                                                      |
+| High Duplicates               | 19                                                                                      |
 | Accepted (Pending Disclosure) | 2                                                                                       |
-| Under Review                  | 18 |
+| Under Review                  | 15 |
 | Platforms                     | Cantina · Code4rena · HackerOne · HackenProof · Bugcrowd · Remedy · Sherlock · Immunefi |
 | Specialties                   | Systemic Infrastructure Security · Logic Errors · Economic Exploits                     |
 | Primary Languages             | Solidity · Rust (CosmWasm) · Python · Move · Cairo · Anchor · TS/JS                     |
@@ -54,6 +54,9 @@ Independent researcher specializing in systemic infrastructure security, logic e
 | 18  | Concrete              | High     | `cancelRequest` uses `msg.sender` instead of request owner, permanently locking shares                                                            |
 | 19  | Blockdaemon ARC       | High     | `--arc.hide-pending-txs` does not sanitize `eth_getBlockByNumber("pending")` in JSON-RPC batch requests                                           |
 | 20  | NEAR Intents Bridges  | High     | Replay guard removal in `fin_transfer_send_tokens_callback` enables EVM→NEAR proof reuse                                                          |
+
+| autofinance-1 | Critical | Division-by-zero in AutopoolDebt.totalAssetsTimeChecked freezes Autopool after full destination exit + 24h stale |
+| ventuals-4 | High | Permissionless finalizeBatch Enables Zero-Cost Griefing Attack That Delays All Withdrawals by One Full Cycle |
 
 ## Active / Under Review
 
